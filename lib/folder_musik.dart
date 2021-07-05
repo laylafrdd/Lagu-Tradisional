@@ -1,3 +1,6 @@
+import 'package:audio_player/audio1.dart';
+import 'package:audio_player/audio2.dart';
+import 'package:audio_player/audio3.dart';
 import 'package:flutter/material.dart';
 
 import 'audio.dart';
@@ -21,7 +24,7 @@ class _FolderMusikState extends State<FolderMusik> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Lagu Suku Ketengban",
+              "Lagu Tradisional Suku Ngalum",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
@@ -61,7 +64,7 @@ class _FolderMusikState extends State<FolderMusik> {
               ),
               onTap: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (c) => AudioPlayerScreens()));
+                    MaterialPageRoute(builder: (c) => AudioPlayer1Screens()));
               },
             ),
             SizedBox(height: 10),
@@ -81,7 +84,7 @@ class _FolderMusikState extends State<FolderMusik> {
               ),
               onTap: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (c) => AudioPlayerScreens()));
+                    MaterialPageRoute(builder: (c) => AudioPlayer2Screens()));
               },
             ),
             SizedBox(height: 10),
@@ -101,7 +104,7 @@ class _FolderMusikState extends State<FolderMusik> {
               ),
               onTap: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (c) => AudioPlayerScreens()));
+                    MaterialPageRoute(builder: (c) => AudioPlayer3Screens()));
               },
             ),
           ],
